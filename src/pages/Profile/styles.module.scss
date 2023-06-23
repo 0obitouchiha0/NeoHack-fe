@@ -1,0 +1,107 @@
+.profile {
+    margin: 50px 9% 0;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 26px;
+        span {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        svg {
+            cursor: pointer;
+        }
+    }
+    .info {
+        width: 400px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__item {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            &-input {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                input {
+                    display: block;
+                    border: none;
+                    padding: 5px 10px;
+                    border: 1px solid lighten(#035afc, 30%);
+                    border-radius: 3px;
+                    &:disabled {
+                        border: 1px solid #fff;
+                        background-color: #fff;
+                        color: #000
+                    }
+                }
+            }
+            &-value {
+                display: block;
+                border: none;
+                padding: 5px 10px;
+                border: 1px solid lighten(#035afc, 30%);
+                border-radius: 3px;
+                &:disabled {
+                    border: 1px solid #fff;
+                    background-color: #fff;
+                    color: #000
+                }
+            }
+            &-error {
+                font-size: 12px;
+                align-self: end;
+                text-align: center;
+                color: #FF5631;
+            }
+        }
+    }
+    .buttons {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        button {
+            padding: 10px 25px;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+        }
+        &__save {
+            background-color: #035afc;
+        }
+        &__reset {
+            background-color: #242424;
+        }
+    }
+    &__error {
+        margin-top: 10px;
+        color: #FF5631;
+    }
+
+    &__success {
+        color: #38e867;
+        margin-top: 20px;
+    }
+
+    .scores {
+        margin-top: 30px;
+        h3 {
+            font-size: 24px;
+        }
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.course {
+    margin: 50px 150px 0;
+    display: flex;
+    justify-content: space-between;
+    &_info {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        &__header {
+            display: flex;
+            gap: 40px;
+            h1 {
+                font-size: 40px;
+            }
+            button {
+                background-color: #035afc;
+                padding: 5px 15px;
+                color: #fff;
+                border-radius: 10px;
+                cursor: pointer;
+                &:disabled {
+                    background-color: #f1f1f1;
+                    color: #000;
+                    cursor: auto;
+                }
+            }
+        }
+        &__img {
+            max-width: 900px;
+            border-radius: 10px;
+        }
+        &__description {
+            display: block;
+            max-width: 900px;
+        }
+    }
+    .lessons {
+        &__title {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        &_list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            list-style: circle;
+            margin-left: 50px;
+            &__item {
+                display: block;
+                font-weight: 600;
+                &--link {
+                    cursor: pointer;
+                    transition: all 0.1s ease;
+                    &:hover {
+                        text-decoration: underline; 
+                        color: #035afc;
+                    } 
+                }
+            }
+        }
+        &__test {
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 20px;
+            text-decoration: underline;
+            transition: all 0.1s ease;
+            &:hover {
+                color: #035afc;
+            }
+        }
+    }
+}

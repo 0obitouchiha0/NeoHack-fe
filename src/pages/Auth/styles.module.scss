@@ -1,0 +1,24 @@
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    &__success {
+        background-color: #fff;
+        margin-top: 10px;
+        cursor: pointer;
+        color: #38e867;
+    }
+    &__change {
+        background-color: #fff;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    .auth {
+        padding: 20px 0;
+    }
+}

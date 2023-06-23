@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 14px;
+    input {
+        margin: 0;
+        width: 20px;
+        height: 20px;
+    }
+    label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 112%;
+        color: #1A202C;
+    }
+}

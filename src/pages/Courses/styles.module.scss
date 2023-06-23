@@ -1,0 +1,109 @@
+.container {
+    padding: 50px 9% 50px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    height: 100%;
+    .courses {
+        &__search {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            h1 {
+                font-size: 40px;
+            }
+            input {
+                padding: 5px 10px;
+                border: 1px solid #ebebeb;
+                font-size: 14px;
+                justify-self: end;
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+            button {
+                padding: 5px 20px;
+                background-color: #035afc;
+                color: #fff;
+                border-radius: 5px;
+                justify-self: end;
+                cursor: pointer;
+                transition: all 0.1s ease;
+                &:hover {
+                    background-color: darken(#035afc, 5%);
+                }
+            }
+        }
+        &_list {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            &__item {
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                padding: 20px;
+                border-radius: 5px;
+                border: 2px solid #f1f1f1;
+                box-shadow: -3px 3px 7px 0px rgba(34, 60, 80, 0.1);
+                cursor: pointer;
+                transition: all 0.1s ease;
+                &:hover {
+                    background-color: #f9f9f9;
+                }
+                h3 {
+                    margin-bottom: 15px;
+                    font-size: 28px;
+                    transition: all 0.1s ease;
+                    &:hover {
+                        color: #035afc;
+                    }
+                }
+                p {
+                    margin-top: 20px;
+                    flex-grow: 1;
+                }
+                span {
+                    display: block;
+                    margin-top: 20px;
+                    font-size: 14px;
+                    text-align: end;
+                }
+                img {
+                    max-width: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .filter_menu {
+        &__title {
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+        .tags {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            &__item {
+                padding: 10px;
+                border: 1px solid #f1f1f1;
+                box-shadow: 0px 1px 3px 1px rgba(34, 60, 80, 0.19);
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.1s ease;
+                &:hover {
+                    background-color: #f9f9f9;
+                }
+                &--active {
+                    background-color: #035afc;
+                    color: #fff;
+                    &:hover {
+                        background-color: darken(#035afc, 5%);
+                    }
+                }
+            }
+        }
+    }
+}

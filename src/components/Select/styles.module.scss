@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &__select {
+        appearance: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        width: 100%;
+        background: #fff;
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        border-radius: 3px;
+        padding: 13px 16px;
+        outline: none;
+        &:focus {
+            border: 1px solid #5B35D5;
+        }
+        &--error {
+            border: 1px solid #FF5631;
+        }
+    }
+    &__arrow {
+        position: absolute;
+        right: 20px;
+        top: 37px;
+    }
+    &__error {
+        display: block;
+        margin-top: 3px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FF5631;
+    }
+    &__errorImg {
+        position: absolute;
+        right: 19px;
+        top: 38px;
+    }
+}

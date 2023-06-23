@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__input {
+        background: #fff;
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        border-radius: 3px;
+        padding: 13px 16px;
+        font-size: 14px;
+        line-height: 13px;
+        outline: none;
+        // &::-webkit-calendar-picker-indicator {
+        //     display: none;
+        // }
+        &:focus {
+            border: 1px solid #5B35D5;
+        }
+        &--error {
+            border: 1px solid #FF5631;
+        }
+    }
+    &__error {
+        display: block;
+        margin-top: 3px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FF5631;
+    }
+}

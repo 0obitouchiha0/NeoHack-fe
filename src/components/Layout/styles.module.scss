@@ -1,0 +1,31 @@
+.layout {
+    height: 100%;
+    .nav {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #035afc;
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            &__link {
+                color: #fff;
+                font-size: 18px;
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+        .account {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+    .content {
+        flex-grow: 1;
+        height: 100%;
+    }
+}
